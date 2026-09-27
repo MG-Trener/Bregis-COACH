@@ -1,0 +1,455 @@
+{
+  "pages": 63,
+  "collapseBlocks": 159,
+  "remainingCollapsed": 0,
+  "localImages": 111,
+  "unavailableImages": [
+    {
+      "page": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+      "image": "https://redmine.bregis.ru/projects/lis_inet/wiki/payment_dialog.png"
+    }
+  ],
+  "audit": [
+    {
+      "name": "root",
+      "total": 25,
+      "remaining": 0,
+      "characters": 46426,
+      "images": 12
+    },
+    {
+      "name": "Auth_blocking",
+      "total": 1,
+      "remaining": 0,
+      "characters": 2451,
+      "images": 1
+    },
+    {
+      "name": "Configure",
+      "total": 0,
+      "remaining": 0,
+      "characters": 14139,
+      "images": 0
+    },
+    {
+      "name": "APT",
+      "total": 0,
+      "remaining": 0,
+      "characters": 1306,
+      "images": 0
+    },
+    {
+      "name": "Install_linux_DEB_210630",
+      "total": 6,
+      "remaining": 0,
+      "characters": 5487,
+      "images": 3
+    },
+    {
+      "name": "Upgrade_linux_DEB_210630",
+      "total": 7,
+      "remaining": 0,
+      "characters": 3034,
+      "images": 2
+    },
+    {
+      "name": "Repair_bregis_php",
+      "total": 1,
+      "remaining": 0,
+      "characters": 872,
+      "images": 1
+    },
+    {
+      "name": "Delete_linux_DEB",
+      "total": 0,
+      "remaining": 0,
+      "characters": 600,
+      "images": 0
+    },
+    {
+      "name": "Repare_linux",
+      "total": 0,
+      "remaining": 0,
+      "characters": 939,
+      "images": 0
+    },
+    {
+      "name": "Yum",
+      "total": 0,
+      "remaining": 0,
+      "characters": 999,
+      "images": 0
+    },
+    {
+      "name": "Install_linux_210514",
+      "total": 9,
+      "remaining": 0,
+      "characters": 6306,
+      "images": 3
+    },
+    {
+      "name": "Upgrade_linux_210514",
+      "total": 4,
+      "remaining": 0,
+      "characters": 1430,
+      "images": 1
+    },
+    {
+      "name": "Alt",
+      "total": 0,
+      "remaining": 0,
+      "characters": 1673,
+      "images": 0
+    },
+    {
+      "name": "Install_alt_linux",
+      "total": 5,
+      "remaining": 0,
+      "characters": 4867,
+      "images": 3
+    },
+    {
+      "name": "Upgrade_alt_linux",
+      "total": 3,
+      "remaining": 0,
+      "characters": 1282,
+      "images": 1
+    },
+    {
+      "name": "Chocolatey",
+      "total": 2,
+      "remaining": 0,
+      "characters": 2383,
+      "images": 1
+    },
+    {
+      "name": "Install_windows_210514",
+      "total": 5,
+      "remaining": 0,
+      "characters": 3400,
+      "images": 2
+    },
+    {
+      "name": "Upgrade_windows_210514",
+      "total": 3,
+      "remaining": 0,
+      "characters": 1120,
+      "images": 1
+    },
+    {
+      "name": "New_installation_path",
+      "total": 1,
+      "remaining": 0,
+      "characters": 1399,
+      "images": 0
+    },
+    {
+      "name": "Get_version",
+      "total": 0,
+      "remaining": 0,
+      "characters": 461,
+      "images": 0
+    },
+    {
+      "name": "Components_connections",
+      "total": 0,
+      "remaining": 0,
+      "characters": 1300,
+      "images": 0
+    },
+    {
+      "name": "Users",
+      "total": 1,
+      "remaining": 0,
+      "characters": 3371,
+      "images": 2
+    },
+    {
+      "name": "Multiple_databases",
+      "total": 0,
+      "remaining": 0,
+      "characters": 1281,
+      "images": 1
+    },
+    {
+      "name": "Patients_login",
+      "total": 3,
+      "remaining": 0,
+      "characters": 6623,
+      "images": 5
+    },
+    {
+      "name": "Employees_login_by_email_and_sent_passwords",
+      "total": 0,
+      "remaining": 0,
+      "characters": 466,
+      "images": 0
+    },
+    {
+      "name": "Access_external",
+      "total": 1,
+      "remaining": 0,
+      "characters": 5238,
+      "images": 1
+    },
+    {
+      "name": "Custom_fields",
+      "total": 6,
+      "remaining": 0,
+      "characters": 5155,
+      "images": 3
+    },
+    {
+      "name": "Order_templates",
+      "total": 3,
+      "remaining": 0,
+      "characters": 1942,
+      "images": 3
+    },
+    {
+      "name": "Hide_services",
+      "total": 4,
+      "remaining": 0,
+      "characters": 3834,
+      "images": 2
+    },
+    {
+      "name": "Configure_params_ariadna",
+      "total": 1,
+      "remaining": 0,
+      "characters": 5115,
+      "images": 1
+    },
+    {
+      "name": "Filtering_biomaterials_by_services",
+      "total": 0,
+      "remaining": 0,
+      "characters": 697,
+      "images": 0
+    },
+    {
+      "name": "Accounting_services",
+      "total": 3,
+      "remaining": 0,
+      "characters": 742,
+      "images": 5
+    },
+    {
+      "name": "Show_services_cost",
+      "total": 6,
+      "remaining": 0,
+      "characters": 5498,
+      "images": 4
+    },
+    {
+      "name": "Cito_in_weblab",
+      "total": 6,
+      "remaining": 0,
+      "characters": 2941,
+      "images": 6
+    },
+    {
+      "name": "Display_codes_patient_and_research",
+      "total": 5,
+      "remaining": 0,
+      "characters": 2210,
+      "images": 1
+    },
+    {
+      "name": "Two_level_customer_selection",
+      "total": 1,
+      "remaining": 0,
+      "characters": 1550,
+      "images": 1
+    },
+    {
+      "name": "Fields_autocompletion",
+      "total": 0,
+      "remaining": 0,
+      "characters": 2025,
+      "images": 0
+    },
+    {
+      "name": "Hide_and_rename_tables_columns",
+      "total": 1,
+      "remaining": 0,
+      "characters": 1549,
+      "images": 1
+    },
+    {
+      "name": "Patient_addresses",
+      "total": 1,
+      "remaining": 0,
+      "characters": 1808,
+      "images": 2
+    },
+    {
+      "name": "Containers",
+      "total": 1,
+      "remaining": 0,
+      "characters": 1245,
+      "images": 1
+    },
+    {
+      "name": "Messages",
+      "total": 1,
+      "remaining": 0,
+      "characters": 1225,
+      "images": 1
+    },
+    {
+      "name": "Configure_printing",
+      "total": 2,
+      "remaining": 0,
+      "characters": 8136,
+      "images": 2
+    },
+    {
+      "name": "Printing_reports",
+      "total": 3,
+      "remaining": 0,
+      "characters": 2737,
+      "images": 4
+    },
+    {
+      "name": "Intermediate_printing",
+      "total": 1,
+      "remaining": 0,
+      "characters": 1272,
+      "images": 1
+    },
+    {
+      "name": "Route_list",
+      "total": 0,
+      "remaining": 0,
+      "characters": 877,
+      "images": 0
+    },
+    {
+      "name": "Rpn_integration",
+      "total": 2,
+      "remaining": 0,
+      "characters": 1993,
+      "images": 1
+    },
+    {
+      "name": "Cash_integration",
+      "total": 3,
+      "remaining": 0,
+      "characters": 4960,
+      "images": 11
+    },
+    {
+      "name": "Integration_sanguis_1c",
+      "total": 3,
+      "remaining": 0,
+      "characters": 2228,
+      "images": 2
+    },
+    {
+      "name": "Upload_payments_to_file_system",
+      "total": 2,
+      "remaining": 0,
+      "characters": 2812,
+      "images": 1
+    },
+    {
+      "name": "Weblab_with_reshenie_db",
+      "total": 0,
+      "remaining": 0,
+      "characters": 1455,
+      "images": 1
+    },
+    {
+      "name": "Logging",
+      "total": 4,
+      "remaining": 0,
+      "characters": 8964,
+      "images": 3
+    },
+    {
+      "name": "Weblab",
+      "total": 3,
+      "remaining": 0,
+      "characters": 9953,
+      "images": 0
+    },
+    {
+      "name": "AriadnaRest",
+      "total": 0,
+      "remaining": 0,
+      "characters": 2007,
+      "images": 0
+    },
+    {
+      "name": "Modify_sql",
+      "total": 0,
+      "remaining": 0,
+      "characters": 3493,
+      "images": 2
+    },
+    {
+      "name": "Install_windows",
+      "total": 2,
+      "remaining": 0,
+      "characters": 2856,
+      "images": 2
+    },
+    {
+      "name": "Install_linux",
+      "total": 2,
+      "remaining": 0,
+      "characters": 2933,
+      "images": 0
+    },
+    {
+      "name": "Upgrade_windows",
+      "total": 1,
+      "remaining": 0,
+      "characters": 1136,
+      "images": 0
+    },
+    {
+      "name": "Upgrade_linux",
+      "total": 0,
+      "remaining": 0,
+      "characters": 874,
+      "images": 0
+    },
+    {
+      "name": "Weblab_setup",
+      "total": 3,
+      "remaining": 0,
+      "characters": 20798,
+      "images": 1
+    },
+    {
+      "name": "Changelog-weblab",
+      "total": 5,
+      "remaining": 0,
+      "characters": 29710,
+      "images": 1
+    },
+    {
+      "name": "Php_update_prevention",
+      "total": 0,
+      "remaining": 0,
+      "characters": 359,
+      "images": 0
+    },
+    {
+      "name": "Fs_migration_prevention",
+      "total": 0,
+      "remaining": 0,
+      "characters": 656,
+      "images": 0
+    },
+    {
+      "name": "Complex_services",
+      "total": 7,
+      "remaining": 0,
+      "characters": 3172,
+      "images": 11
+    }
+  ]
+}

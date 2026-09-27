@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS schema_migrations(version TEXT PRIMARY KEY, applied_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL DEFAULT '', role TEXT NOT NULL DEFAULT 'user' CHECK(role IN ('user','editor','admin')), public INTEGER NOT NULL DEFAULT 0 CHECK(public IN(0,1)), created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS articles(id TEXT PRIMARY KEY, title TEXT NOT NULL,topic TEXT NOT NULL,body TEXT NOT NULL,html TEXT NOT NULL DEFAULT '',images TEXT NOT NULL DEFAULT '[]',source TEXT NOT NULL,source_name TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN('draft','review','published','archived')), role TEXT NOT NULL DEFAULT 'Пользователь',version INTEGER NOT NULL DEFAULT 1,sort_order INTEGER NOT NULL DEFAULT 100,updated_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS articles_status_topic ON articles(status,topic);
+CREATE TABLE IF NOT EXISTS article_versions(id TEXT PRIMARY KEY,article_id TEXT NOT NULL REFERENCES articles(id),version INTEGER NOT NULL,snapshot TEXT NOT NULL,actor TEXT NOT NULL,created_at TEXT NOT NULL,UNIQUE(article_id,version));
+CREATE TABLE IF NOT EXISTS progress(user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,article_id TEXT NOT NULL REFERENCES articles(id),completed_at TEXT NOT NULL,PRIMARY KEY(user_id,article_id));
+CREATE TABLE IF NOT EXISTS quests(id TEXT PRIMARY KEY,title TEXT NOT NULL,topic TEXT NOT NULL,description TEXT NOT NULL,kind TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'draft',version INTEGER NOT NULL DEFAULT 1,questions TEXT NOT NULL,xp INTEGER NOT NULL CHECK(xp>0));
+CREATE TABLE IF NOT EXISTS attempts(id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,quest_id TEXT NOT NULL REFERENCES quests(id),version INTEGER NOT NULL,snapshot TEXT NOT NULL,answers TEXT NOT NULL DEFAULT '[]',score INTEGER,completed_at TEXT,created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS attempts_user ON attempts(user_id,created_at);
+CREATE TABLE IF NOT EXISTS xp_events(id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,source TEXT NOT NULL,amount INTEGER NOT NULL,created_at TEXT NOT NULL,UNIQUE(user_id,source));
+CREATE INDEX IF NOT EXISTS xp_user_date ON xp_events(user_id,created_at);
+CREATE TABLE IF NOT EXISTS audit(id TEXT PRIMARY KEY,actor TEXT NOT NULL,action TEXT NOT NULL,entity TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS sessions(id TEXT PRIMARY KEY,data TEXT NOT NULL,expires_at TEXT NOT NULL);
+INSERT INTO schema_migrations(version,applied_at) VALUES('001','2026-09-28') ON CONFLICT(version) DO NOTHING;

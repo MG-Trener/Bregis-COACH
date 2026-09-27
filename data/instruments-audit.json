@@ -1,0 +1,153 @@
+{
+  "catalog": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instruments",
+  "reviewedAt": "2026-09-28",
+  "devices": [
+    {
+      "name": "ABX Pentra 400",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_AbxPentra400",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "baud",
+        "parity",
+        "stop",
+        "profile",
+        "transmission",
+        "loading",
+        "query"
+      ]
+    },
+    {
+      "name": "cobas c 311",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_CobasC311",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "hostOn",
+        "barcode",
+        "newMode",
+        "autoRerun"
+      ]
+    },
+    {
+      "name": "BC-5300",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_BC5300",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "autoSend",
+        "ack",
+        "inputMode",
+        "bidirectional"
+      ]
+    },
+    {
+      "name": "XN-1000",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_SysmexXNseries",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "protocol",
+        "barcodeRead",
+        "autoOrder"
+      ]
+    },
+    {
+      "name": "Alisei",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_Alisei",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "protocol",
+        "baud",
+        "bits",
+        "parity",
+        "stop",
+        "flow",
+        "active",
+        "autoWL",
+        "instrumentId",
+        "hostId"
+      ]
+    },
+    {
+      "name": "EVOLIS Twin",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_EvolisTwin",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "protocol",
+        "baud",
+        "bits",
+        "parity",
+        "stop",
+        "osMatch"
+      ]
+    },
+    {
+      "name": "Access 2",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_Access",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "baud",
+        "lisInterface",
+        "globalLIS",
+        "autoSend",
+        "hostQuery"
+      ]
+    },
+    {
+      "name": "ADVIA Centaur XPT",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_ADVIACentaurXPT",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport"
+      ]
+    },
+    {
+      "name": "ACL TOP",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_ILAclTop",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "protocol",
+        "mode",
+        "active",
+        "instrumentId",
+        "hostId",
+        "internalId",
+        "hostQuery",
+        "autoDownload",
+        "autoSend"
+      ]
+    },
+    {
+      "name": "STA Satellite",
+      "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_StagoSTASatelite",
+      "remainingCollapsed": 0,
+      "settingsFromSource": [
+        "transport",
+        "protocol",
+        "baud",
+        "bits",
+        "parity",
+        "stop",
+        "online"
+      ]
+    }
+  ],
+  "simulation": [
+    "LIS server address",
+    "ICM assigned ports",
+    "MOXA installed addresses/channels",
+    "processing time",
+    "sample routing",
+    "fault timing"
+  ],
+  "excluded": [
+    "customer lists",
+    "credentials",
+    "contact details"
+  ]
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "an0",
+    "maker": "HORIBA",
+    "name": "ABX Pentra 400",
+    "department": "bio",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_AbxPentra400",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5100",
+      "transport": "RS-232",
+      "baud": "9600",
+      "parity": "None",
+      "stop": "1",
+      "profile": "None",
+      "transmission": "Order",
+      "loading": "Identification",
+      "query": "Query Mode",
+      "moxa": "192.0.2.30",
+      "channel": "1"
+    },
+    "driver": "AbxPentra400"
+  },
+  {
+    "id": "an1",
+    "maker": "Roche",
+    "name": "cobas c 311",
+    "department": "bio",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_CobasC311",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5101",
+      "transport": "TCP",
+      "hostOn": "Yes",
+      "barcode": "Sample ID",
+      "newMode": "On",
+      "autoRerun": "Off"
+    },
+    "driver": "CobasC311"
+  },
+  {
+    "id": "an2",
+    "maker": "Mindray",
+    "name": "BC-5300",
+    "department": "hema",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_BC5300",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5102",
+      "transport": "TCP",
+      "autoSend": "On",
+      "ack": "On",
+      "inputMode": "Вручную",
+      "bidirectional": "On"
+    },
+    "driver": "BC5300"
+  },
+  {
+    "id": "an3",
+    "maker": "Sysmex",
+    "name": "XN-1000",
+    "department": "hema",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_SysmexXNseries",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5103",
+      "transport": "TCP",
+      "protocol": "ASTM E1394",
+      "barcodeRead": "On",
+      "autoOrder": "On"
+    },
+    "driver": "SysmexXN"
+  },
+  {
+    "id": "an4",
+    "maker": "SEAC",
+    "name": "Alisei",
+    "department": "elisa",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_Alisei",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5104",
+      "transport": "RS-232",
+      "protocol": "ASTM",
+      "baud": "9600",
+      "bits": "8",
+      "parity": "None",
+      "stop": "1",
+      "flow": "RTS/CTS",
+      "active": "On",
+      "autoWL": "On",
+      "instrumentId": "Alisei",
+      "hostId": "LIS",
+      "moxa": "192.0.2.34",
+      "channel": "1"
+    },
+    "driver": "Alisei"
+  },
+  {
+    "id": "an5",
+    "maker": "Bio-Rad",
+    "name": "EVOLIS Twin",
+    "department": "elisa",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_EvolisTwin",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5105",
+      "transport": "RS-232",
+      "protocol": "ASTM",
+      "baud": "9600",
+      "bits": "8",
+      "parity": "None",
+      "stop": "1",
+      "osMatch": "On",
+      "moxa": "192.0.2.35",
+      "channel": "1"
+    },
+    "driver": "EvolisTwin"
+  },
+  {
+    "id": "an6",
+    "maker": "Beckman Coulter",
+    "name": "Access 2",
+    "department": "clia",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_Access",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5106",
+      "transport": "RS-232",
+      "baud": "2400",
+      "lisInterface": "On",
+      "globalLIS": "On",
+      "autoSend": "On",
+      "hostQuery": "On",
+      "moxa": "192.0.2.36",
+      "channel": "1"
+    },
+    "driver": "Access"
+  },
+  {
+    "id": "an7",
+    "maker": "Siemens",
+    "name": "ADVIA Centaur XPT",
+    "department": "clia",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_ADVIACentaurXPT",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5107",
+      "transport": "TCP"
+    },
+    "driver": "ADVIACentaurXPT"
+  },
+  {
+    "id": "an8",
+    "maker": "Werfen / IL",
+    "name": "ACL TOP",
+    "department": "coag",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_ILAclTop",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5108",
+      "transport": "TCP",
+      "protocol": "Full ASTM-1394",
+      "mode": "TCP Client",
+      "active": "On",
+      "instrumentId": "ACLTOP",
+      "hostId": "LIS",
+      "internalId": "Off",
+      "hostQuery": "On",
+      "autoDownload": "Off",
+      "autoSend": "On"
+    },
+    "driver": "ILAclTop"
+  },
+  {
+    "id": "an9",
+    "maker": "Stago",
+    "name": "STA Satellite",
+    "department": "coag",
+    "source": "https://redmine.bregis.ru/projects/lis_projects/wiki/Instrument_StagoSTASatelite",
+    "passport": {
+      "host": "192.0.2.10",
+      "port": "5109",
+      "transport": "RS-232",
+      "protocol": "ASTM",
+      "baud": "9600",
+      "bits": "8",
+      "parity": "None",
+      "stop": "1",
+      "online": "Yes",
+      "moxa": "192.0.2.39",
+      "channel": "1"
+    },
+    "driver": "StagoSTASatelite"
+  }
+]

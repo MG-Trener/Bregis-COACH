@@ -1,0 +1,19 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.local/
+dist/
+data/private/
+public/manuals/
+public/media/
+data/catalog.json
+data/redmine.json
+work/
+
+/*.pdf
+/*.docx
+data/question-drafts.json
+
+# Private full-text manual index
+data/manual-search.json

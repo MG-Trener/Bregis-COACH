@@ -1,0 +1,680 @@
+[
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/13518/lab-4.png",
+    "localImage": "/media/redmine-713cdd6f7da0c969.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/33571/balloon.png",
+    "localImage": "/media/redmine-bfe749906e1441cb.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35530/getLocalHostIssue.png",
+    "localImage": "/media/redmine-4e92658d713768df.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/33246/settings.png",
+    "localImage": "/media/redmine-9305778f42ec6e68.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/13521/instructions.png",
+    "localImage": "/media/redmine-d2df4d12e5ac59d1.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/13521/instructions.png",
+    "localImage": "/media/redmine-d2df4d12e5ac59d1.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/13520/changelog.png",
+    "localImage": "/media/redmine-fe199cfd680226bf.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/36948/add_column_with_codes.png",
+    "localImage": "/media/redmine-889e295b058c8069.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/13519/apps.png",
+    "localImage": "/media/redmine-e9955408a2b7defc.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/13844/Web-lab-scheme-ariadna-rest.png",
+    "localImage": "/media/redmine-5ca3d45d0f399877.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/8790/Web-lab-scheme.png",
+    "localImage": "/media/redmine-949650666dd1bcef.png"
+  },
+  {
+    "articleId": "wiki-root",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/13522/milestones.png",
+    "localImage": "/media/redmine-20188efae67f97bb.png"
+  },
+  {
+    "articleId": "wiki-Auth_blocking",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Auth_blocking",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/22225/block_auth.png",
+    "localImage": "/media/redmine-4c23992436161e79.png"
+  },
+  {
+    "articleId": "wiki-Install_linux_DEB_210630",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_linux_DEB_210630",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/21956/apt_install_bregis_nginx.png",
+    "localImage": "/media/redmine-db9b1c9e8a6c6ff1.png"
+  },
+  {
+    "articleId": "wiki-Install_linux_DEB_210630",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_linux_DEB_210630",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/11098/configure_db_connection.png",
+    "localImage": "/media/redmine-9e40d09564de9e6e.png"
+  },
+  {
+    "articleId": "wiki-Install_linux_DEB_210630",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_linux_DEB_210630",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/11097/update_p_web_lab.png",
+    "localImage": "/media/redmine-29656cefc19316d4.png"
+  },
+  {
+    "articleId": "wiki-Upgrade_linux_DEB_210630",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Upgrade_linux_DEB_210630",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/12111/update_p_web_lab.png",
+    "localImage": "/media/redmine-fff713a9d18a9f41.png"
+  },
+  {
+    "articleId": "wiki-Upgrade_linux_DEB_210630",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Upgrade_linux_DEB_210630",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/40350/Zamk.png",
+    "localImage": "/media/redmine-bf4a537862b3a3ca.png"
+  },
+  {
+    "articleId": "wiki-Repair_bregis_php",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Repair_bregis_php",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/33036/console_error.png",
+    "localImage": "/media/redmine-fa6fe957a9d85329.png"
+  },
+  {
+    "articleId": "wiki-Install_linux_210514",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_linux_210514",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/21954/yum_install_bregis-nginx.png",
+    "localImage": "/media/redmine-807729028ecc178c.png"
+  },
+  {
+    "articleId": "wiki-Install_linux_210514",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_linux_210514",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/10517/configure_db_connection.png",
+    "localImage": "/media/redmine-d761e4ceb7b22cb1.png"
+  },
+  {
+    "articleId": "wiki-Install_linux_210514",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_linux_210514",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/10516/update_p_web_lab.png",
+    "localImage": "/media/redmine-a4fb48de6c9a6c19.png"
+  },
+  {
+    "articleId": "wiki-Upgrade_linux_210514",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Upgrade_linux_210514",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/10519/update_p_web_lab.png",
+    "localImage": "/media/redmine-5a0545c3b68a9597.png"
+  },
+  {
+    "articleId": "wiki-Install_alt_linux",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_alt_linux",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35297/yum_install_bregis-nginx.png",
+    "localImage": "/media/redmine-842dc84b22a53f32.png"
+  },
+  {
+    "articleId": "wiki-Install_alt_linux",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_alt_linux",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35296/configure_db_connection.png",
+    "localImage": "/media/redmine-ba3ffb98ac979445.png"
+  },
+  {
+    "articleId": "wiki-Install_alt_linux",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_alt_linux",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35298/update_p_web_lab.png",
+    "localImage": "/media/redmine-0a83eb6e7c3fb4ed.png"
+  },
+  {
+    "articleId": "wiki-Upgrade_alt_linux",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Upgrade_alt_linux",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35299/update_p_web_lab.png",
+    "localImage": "/media/redmine-08e3b422198e986f.png"
+  },
+  {
+    "articleId": "wiki-Chocolatey",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_projects/wiki/Chocolatey",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/34652/save_package_from_nexus.png",
+    "localImage": "/media/redmine-b8eafd4beca5aec7.png"
+  },
+  {
+    "articleId": "wiki-Install_windows_210514",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_windows_210514",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/10515/configure_db_connection.png",
+    "localImage": "/media/redmine-a30bc0dccf8d8726.png"
+  },
+  {
+    "articleId": "wiki-Install_windows_210514",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_windows_210514",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/10514/update_p_web_lab.png",
+    "localImage": "/media/redmine-aa1b74e04cfe2601.png"
+  },
+  {
+    "articleId": "wiki-Upgrade_windows_210514",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Upgrade_windows_210514",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/10518/update_p_web_lab.png",
+    "localImage": "/media/redmine-b7c36eefe2626dd6.png"
+  },
+  {
+    "articleId": "wiki-Users",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Users",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/8796/link_1.png",
+    "localImage": "/media/redmine-6ec23982c7e69c31.png"
+  },
+  {
+    "articleId": "wiki-Users",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Users",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/8795/link_2.png",
+    "localImage": "/media/redmine-9112772e1857fecb.png"
+  },
+  {
+    "articleId": "wiki-Multiple_databases",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Multiple_databases",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/22617/view.png",
+    "localImage": "/media/redmine-4bb2e17c2955a267.png"
+  },
+  {
+    "articleId": "wiki-Patients_login",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Patients_login",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9836/form_for_patient_phone.PNG",
+    "localImage": "/media/redmine-e8180bb11af69e24.png"
+  },
+  {
+    "articleId": "wiki-Patients_login",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Patients_login",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9837/form_for_patient_access_key.PNG",
+    "localImage": "/media/redmine-7deb5eabcb3943e3.png"
+  },
+  {
+    "articleId": "wiki-Patients_login",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Patients_login",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9840/form_send_password.PNG",
+    "localImage": "/media/redmine-e3b775abe3a71dfd.png"
+  },
+  {
+    "articleId": "wiki-Patients_login",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Patients_login",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9835/form_default.PNG",
+    "localImage": "/media/redmine-9194320b1bcbb10d.png"
+  },
+  {
+    "articleId": "wiki-Patients_login",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Patients_login",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9838/form_without_tabs.PNG",
+    "localImage": "/media/redmine-fe3890f19929b7b0.png"
+  },
+  {
+    "articleId": "wiki-Access_external",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Access_external",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/27116/hands.png",
+    "localImage": "/media/redmine-7155966e0e6a2d60.png"
+  },
+  {
+    "articleId": "wiki-Custom_fields",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Custom_fields",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35601/1.png",
+    "localImage": "/media/redmine-f555b75ff558909a.png"
+  },
+  {
+    "articleId": "wiki-Custom_fields",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Custom_fields",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35602/2.png",
+    "localImage": "/media/redmine-7ebf0ce6f53b6df4.png"
+  },
+  {
+    "articleId": "wiki-Custom_fields",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Custom_fields",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35603/3.png",
+    "localImage": "/media/redmine-9332574ec41b64c2.png"
+  },
+  {
+    "articleId": "wiki-Order_templates",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Order_templates",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9002/research_templates_usage.gif",
+    "localImage": "/media/redmine-d59af4be833a773c.gif"
+  },
+  {
+    "articleId": "wiki-Order_templates",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Order_templates",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9003/add_attribute_for_order_template.png",
+    "localImage": "/media/redmine-ed28ac1ee0e2654a.png"
+  },
+  {
+    "articleId": "wiki-Order_templates",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Order_templates",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/23409/research_templates_users_access.gif",
+    "localImage": "/media/redmine-f8a1c703aac35968.gif"
+  },
+  {
+    "articleId": "wiki-Hide_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Hide_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/20873/in_oracle.png",
+    "localImage": "/media/redmine-8111201b5172fdcf.png"
+  },
+  {
+    "articleId": "wiki-Hide_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Hide_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/20880/in_postgresql.png",
+    "localImage": "/media/redmine-0f60d82808ab3818.png"
+  },
+  {
+    "articleId": "wiki-Configure_params_ariadna",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Configure_params_ariadna",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/26318/AppContent_Attr_4_108_UserRight.png",
+    "localImage": "/media/redmine-ea4c77b1bb8c15c5.png"
+  },
+  {
+    "articleId": "wiki-Accounting_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Accounting_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/39370/add_1.gif",
+    "localImage": "/media/redmine-64a726c71802d308.gif"
+  },
+  {
+    "articleId": "wiki-Accounting_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Accounting_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/39369/add_2.gif",
+    "localImage": "/media/redmine-a3ac333ca5320852.gif"
+  },
+  {
+    "articleId": "wiki-Accounting_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Accounting_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/39371/p_01.png",
+    "localImage": "/media/redmine-4d1cd0975e0777d9.png"
+  },
+  {
+    "articleId": "wiki-Accounting_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Accounting_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/39372/p_02.png",
+    "localImage": "/media/redmine-5a9cc22abf965113.png"
+  },
+  {
+    "articleId": "wiki-Accounting_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Accounting_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/39373/p_03.png",
+    "localImage": "/media/redmine-27688a82a8f63381.png"
+  },
+  {
+    "articleId": "wiki-Show_services_cost",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Show_services_cost",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/18285/show_services_cost.gif",
+    "localImage": "/media/redmine-6569ae75768dc077.gif"
+  },
+  {
+    "articleId": "wiki-Show_services_cost",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Show_services_cost",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/18502/AppEconom_Srv_Price_1.png",
+    "localImage": "/media/redmine-c252cc147e6c1e5f.png"
+  },
+  {
+    "articleId": "wiki-Show_services_cost",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Show_services_cost",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/18504/AppEconom_Srv_Price_2.png",
+    "localImage": "/media/redmine-42a485cbcdcc68f4.png"
+  },
+  {
+    "articleId": "wiki-Show_services_cost",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Show_services_cost",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/18506/AppEconom_Srv_Price_3.png",
+    "localImage": "/media/redmine-b066a0da4968c601.png"
+  },
+  {
+    "articleId": "wiki-Cito_in_weblab",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cito_in_weblab",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/32758/in_armlab.png",
+    "localImage": "/media/redmine-476fa45b7239dd5f.png"
+  },
+  {
+    "articleId": "wiki-Cito_in_weblab",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cito_in_weblab",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/32759/in_weblab_order.png",
+    "localImage": "/media/redmine-ae2ea2aa002792df.png"
+  },
+  {
+    "articleId": "wiki-Cito_in_weblab",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cito_in_weblab",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/32760/in_weblab_services.png",
+    "localImage": "/media/redmine-3b582e6a69de9b41.png"
+  },
+  {
+    "articleId": "wiki-Cito_in_weblab",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cito_in_weblab",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/39764/citoes_statuses_for_complex_service.gif",
+    "localImage": "/media/redmine-7a1a4d23cd3384af.gif"
+  },
+  {
+    "articleId": "wiki-Cito_in_weblab",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cito_in_weblab",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/32769/in_economist.png",
+    "localImage": "/media/redmine-d60044c450067559.png"
+  },
+  {
+    "articleId": "wiki-Cito_in_weblab",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cito_in_weblab",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/32770/in_weblab_restricted.png",
+    "localImage": "/media/redmine-788b8a126d92c963.png"
+  },
+  {
+    "articleId": "wiki-Display_codes_patient_and_research",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Display_codes_patient_and_research",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/20882/inspect_field_code.png",
+    "localImage": "/media/redmine-72f4178913598bf0.png"
+  },
+  {
+    "articleId": "wiki-Two_level_customer_selection",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Two_level_customer_selection",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/39422/scheme.png",
+    "localImage": "/media/redmine-386b290be2a01082.png"
+  },
+  {
+    "articleId": "wiki-Hide_and_rename_tables_columns",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Hide_and_rename_tables_columns",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/27520/get_column_class_attribute.png",
+    "localImage": "/media/redmine-05816bd703e217ff.png"
+  },
+  {
+    "articleId": "wiki-Patient_addresses",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Patient_addresses",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/11658/additional_fields.png",
+    "localImage": "/media/redmine-cb704376da8de038.png"
+  },
+  {
+    "articleId": "wiki-Patient_addresses",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Patient_addresses",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/11657/set_empty_item.png",
+    "localImage": "/media/redmine-6b42afb59b61716a.png"
+  },
+  {
+    "articleId": "wiki-Containers",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Containers",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/18889/registre_order.gif",
+    "localImage": "/media/redmine-535a83e8fa9c6748.gif"
+  },
+  {
+    "articleId": "wiki-Messages",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Messages",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/25444/messages.png",
+    "localImage": "/media/redmine-79844907ccf5743a.png"
+  },
+  {
+    "articleId": "wiki-Configure_printing",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Configure_printing",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9581/printing_in_table.png",
+    "localImage": "/media/redmine-b7fe52684873e06d.png"
+  },
+  {
+    "articleId": "wiki-Configure_printing",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Configure_printing",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/9580/printing_in_tab.png",
+    "localImage": "/media/redmine-c125a40558be671f.png"
+  },
+  {
+    "articleId": "wiki-Printing_reports",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Printing_reports",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/15414/reports_printing.gif",
+    "localImage": "/media/redmine-9098f2b4f3f399db.gif"
+  },
+  {
+    "articleId": "wiki-Printing_reports",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Printing_reports",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/17987/AppContent_Form_Filter_Users_1.png",
+    "localImage": "/media/redmine-64dcbc2dcc0063a0.png"
+  },
+  {
+    "articleId": "wiki-Printing_reports",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Printing_reports",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/17986/AppContent_Form_Filter_Users_2.png",
+    "localImage": "/media/redmine-9c64fd43132fb5b1.png"
+  },
+  {
+    "articleId": "wiki-Printing_reports",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Printing_reports",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/17983/AppContent_Form_Filter_Apps.png",
+    "localImage": "/media/redmine-2bbaa2000160340d.png"
+  },
+  {
+    "articleId": "wiki-Intermediate_printing",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Intermediate_printing",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/31883/intermediate_order.png",
+    "localImage": "/media/redmine-012bd19686a032d9.png"
+  },
+  {
+    "articleId": "wiki-Rpn_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Rpn_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/17207/process_view.gif",
+    "localImage": "/media/redmine-ceb8bba609cb7f06.gif"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/30087/open_payment_dialog_from_add_custom_card.png",
+    "localImage": "/media/redmine-461ca2649a3afef3.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/30088/payment_form.png",
+    "localImage": "/media/redmine-0b376223e717c0fa.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/26380/check.png",
+    "localImage": "/media/redmine-08525c12ed5aea65.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/30089/indicator_payment_status.png",
+    "localImage": "/media/redmine-c1f93189d01b24b6.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/33935/typical_discount.png",
+    "localImage": "/media/redmine-16b403c1453501a2.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35754/refund.png",
+    "localImage": "/media/redmine-167ba3f9d37f6fd5.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/35820/consideration.png",
+    "localImage": "/media/redmine-9ad17471795415f6.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/37317/cash_auth.png",
+    "localImage": "/media/redmine-3037bfd8f2c0dbfb.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/17821/additional_field_GUI.png",
+    "localImage": "/media/redmine-c1dfde981506e10b.png"
+  },
+  {
+    "articleId": "wiki-Cash_integration",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Cash_integration",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/33925/5fbf565d-0885-42f4-9800-e1bf77d5bccf.jpeg",
+    "localImage": "/media/redmine-8a0afe842d2ffc04.jpeg"
+  },
+  {
+    "articleId": "wiki-Integration_sanguis_1c",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Integration_sanguis_1c",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/23787/send_orders_to_1c.gif",
+    "localImage": "/media/redmine-83774a07045c951b.gif"
+  },
+  {
+    "articleId": "wiki-Integration_sanguis_1c",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Integration_sanguis_1c",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/23789/seccess.png",
+    "localImage": "/media/redmine-2f0ae0310eb62110.png"
+  },
+  {
+    "articleId": "wiki-Upload_payments_to_file_system",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Upload_payments_to_file_system",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/36986/ui_payment.png",
+    "localImage": "/media/redmine-c3c52a214b9da098.png"
+  },
+  {
+    "articleId": "wiki-Weblab_with_reshenie_db",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Weblab_with_reshenie_db",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/27008/msg-1001880592070-168.jpg",
+    "localImage": "/media/redmine-ab7293d2ecac89cf.jpg"
+  },
+  {
+    "articleId": "wiki-Logging",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Logging",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/15467/Web-lab-scheme-logging.png",
+    "localImage": "/media/redmine-85b3d7d0d1321106.png"
+  },
+  {
+    "articleId": "wiki-Logging",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Logging",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/15474/example_console.PNG",
+    "localImage": "/media/redmine-f413075c24a13844.png"
+  },
+  {
+    "articleId": "wiki-Logging",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Logging",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/15476/example_db_log.png",
+    "localImage": "/media/redmine-f497eafef182a0a3.png"
+  },
+  {
+    "articleId": "wiki-Modify_sql",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Modify_sql",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/10553/clientId_default.png",
+    "localImage": "/media/redmine-c85ad61a38851af6.png"
+  },
+  {
+    "articleId": "wiki-Modify_sql",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Modify_sql",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/10554/clientId_A0026.png",
+    "localImage": "/media/redmine-9e430033a96a944b.png"
+  },
+  {
+    "articleId": "wiki-Install_windows",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_windows",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/8793/XmlServerSettings.png",
+    "localImage": "/media/redmine-298cddb069f892a7.png"
+  },
+  {
+    "articleId": "wiki-Install_windows",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Install_windows",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/8794/XmlServerCommands.png",
+    "localImage": "/media/redmine-b03b654a22c91db3.png"
+  },
+  {
+    "articleId": "wiki-Weblab_setup",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Weblab_setup",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/3753/%D1%85%D0%BC%D0%BB-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80.png",
+    "localImage": "/media/redmine-3bcf07ccf6d55ef6.png"
+  },
+  {
+    "articleId": "wiki-Changelog-weblab",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Changelog-weblab",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/36948/add_column_with_codes.png",
+    "localImage": "/media/redmine-889e295b058c8069.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/29677/services_in_ui.png",
+    "localImage": "/media/redmine-83eba74b2acbc79c.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/31598/complex_services.png",
+    "localImage": "/media/redmine-507cd64ad44ceba4.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/29676/complex_service.gif",
+    "localImage": "/media/redmine-b64504aee863fabc.gif"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/29674/composite_service.gif",
+    "localImage": "/media/redmine-521dfa13bf5b2d53.gif"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/34591/example_2.png",
+    "localImage": "/media/redmine-72bb96d0323150e8.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/34163/order_card.png",
+    "localImage": "/media/redmine-ebed17518aba6cb0.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/34162/payment_card.png",
+    "localImage": "/media/redmine-d71154d8f9b12044.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/31697/med.patserv.png",
+    "localImage": "/media/redmine-33b8141b60d820f7.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/31696/lab.research.png",
+    "localImage": "/media/redmine-0539092c759c82de.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/31695/lab.order_info.png",
+    "localImage": "/media/redmine-d6d6a52bfb2f08e2.png"
+  },
+  {
+    "articleId": "wiki-Complex_services",
+    "sourcePage": "https://redmine.bregis.ru/projects/lis_inet/wiki/Complex_services",
+    "sourceImage": "https://redmine.bregis.ru/attachments/download/31746/service_deletion_blocking.png",
+    "localImage": "/media/redmine-dbe2c5e4057d351a.png"
+  }
+]

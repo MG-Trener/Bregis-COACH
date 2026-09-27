@@ -1,0 +1,38 @@
+{
+  "retained": 748,
+  "removed": [
+    {
+      "article": "wiki-root",
+      "src": "/media/redmine-713cdd6f7da0c969.png"
+    },
+    {
+      "article": "wiki-root",
+      "src": "/media/redmine-bfe749906e1441cb.png"
+    },
+    {
+      "article": "wiki-root",
+      "src": "/media/redmine-9305778f42ec6e68.png"
+    },
+    {
+      "article": "wiki-root",
+      "src": "/media/redmine-d2df4d12e5ac59d1.png"
+    },
+    {
+      "article": "wiki-root",
+      "src": "/media/redmine-d2df4d12e5ac59d1.png"
+    },
+    {
+      "article": "wiki-root",
+      "src": "/media/redmine-fe199cfd680226bf.png"
+    },
+    {
+      "article": "wiki-root",
+      "src": "/media/redmine-e9955408a2b7defc.png"
+    },
+    {
+      "article": "wiki-root",
+      "src": "/media/redmine-20188efae67f97bb.png"
+    }
+  ],
+  "policy": "Only images mapped to this exact article in PDF/Redmine provenance. Redmine navigation illustrations excluded."
+}
