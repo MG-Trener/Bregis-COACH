@@ -1,0 +1,44 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
+import { DatabaseSync } from 'node:sqlite';
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+const dir=mkdtempSync(join(tmpdir(),'coach-quests-')), filename=join(dir,'test.sqlite');
+const db=new DatabaseSync(filename);
+db.exec(readFileSync('migrations/001.sql','utf8'));
+const questions=JSON.stringify([{type:'single',prompt:'Test question',options:['Yes','No'],answer:0,explanation:'Test answer'}]);
+for(const id of ['first','legacy','failed'])db.prepare('INSERT INTO quests(id,title,topic,description,kind,status,questions,xp) VALUES(?,?,?,?,?,?,?,?)').run(id,id,'Test','Test quest','test','published',questions,120);
+const origin='http://localhost:4329';
+const child=spawn(process.execPath,['server/index.mjs'],{env:{...process.env,PORT:'4329',APP_URL:origin,TEST_DB:filename,DATABASE_URL:'',NODE_ENV:'development'},stdio:['ignore','pipe','pipe']});
+let cookie='';
+async function req(url,method='GET',body){const r=await fetch(origin+'/api'+url,{method,headers:{origin,'content-type':'application/json',cookie},...(body?{body:JSON.stringify(body)}:{})});if(r.headers.get('set-cookie'))cookie=r.headers.get('set-cookie').split(';')[0];assert.ok([200,201].includes(r.status),`Unexpected HTTP ${r.status} for ${url}`);return r.json();}
+async function attempt(id,answer=0){const a=await req('/quests/'+id+'/start','POST');await req('/attempts/'+a.id,'PUT',{answers:[answer]});return a.id;}
+const finish=id=>req('/attempts/'+id+'/finish','POST');
+test('quest completion persists and rewards once across attempts, versions and legacy awards',async()=>{
+await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('Startup timeout')),15000);child.stdout.on('data',d=>{if(d.toString().includes('BREGIS local')){clearTimeout(timer);resolve();}});child.on('exit',()=>{clearTimeout(timer);reject(Error('Server exited'));});});
+await req('/local-login','POST');
+const a=await attempt('first');assert.equal((await finish(a)).xp,120);
+assert.equal((await finish(a)).xp,0);
+const b=await attempt('first');assert.equal((await finish(b)).xp,0);
+db.prepare("UPDATE quests SET version=2 WHERE id='first'").run();
+const c=await attempt('first');assert.equal((await finish(c)).xp,0);
+const p=await req('/profile');assert.equal(p.xp,120);assert.ok(p.attempts.some(x=>x.quest_id==='first'&&x.score===100&&x.completed_at));
+db.prepare('INSERT INTO xp_events(id,user_id,source,amount,created_at) VALUES(?,?,?,?,?)').run('legacy-award','local-learner','quest:legacy:1',120,new Date().toISOString());
+assert.equal((await finish(await attempt('legacy'))).xp,0);
+const failed=await finish(await attempt('failed',1));assert.equal(failed.xp,0);assert.equal(failed.completed,false);
+const d=await attempt('failed');const results=await Promise.all([finish(d),finish(d),finish(d)]);assert.equal(results.reduce((sum,r)=>sum+r.xp,0),120);
+assert.equal((await req('/profile')).xp,360);
+await req('/logout','POST');cookie='';await req('/auth/register','POST',{username:'other-quest-user',password:'StrongPassword123!'});
+assert.equal((await req('/profile')).attempts.length,0);
+assert.equal((await finish(await attempt('first'))).xp,120);
+assert.deepEqual(await req('/ranking'),[]);
+await req('/profile','PATCH',{name:'Other user',public:true});
+const ranked=await req('/ranking');assert.equal(ranked.length,1);assert.equal(ranked[0].name,'Other user');assert.equal(ranked[0].xp,120);assert.equal(ranked[0].rank,1);
+assert.equal((await req('/ranking?period=month'))[0].xp,120);
+assert.equal((await finish(await attempt('first'))).xp,0);
+assert.equal((await req('/ranking'))[0].xp,120);
+await req('/profile','PATCH',{name:'Other user',public:false});assert.deepEqual(await req('/ranking'),[]);
+});
+test.after(()=>{child.kill();db.close();rmSync(dir,{recursive:true,force:true});});

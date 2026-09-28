@@ -36,16 +36,26 @@ app.put('/api/attempts/:id',requireUser,async(req,res)=>{const answers=z.array(z
 
 app.post('/api/attempts/:id/finish',requireUser,rateLimit({windowMs:60000,limit:20}),async(req,res)=>{
  const response=await transaction(async()=>{
+ // Serialize completions for this user, including different attempts and quest versions.
+ if(postgres)await query('SELECT id FROM users WHERE id=? FOR UPDATE',[req.user.id]);
  const a=(await query('SELECT * FROM attempts WHERE id=? AND user_id=?'+(postgres?' FOR UPDATE':''),[req.params.id,req.user.id]))[0];
  if(!a)return null;
  const result=scoreQuestions(JSON.parse(a.snapshot),JSON.parse(a.answers));
  const q=(await query('SELECT * FROM quests WHERE id=?',[a.quest_id]))[0];
+ const source='quest:'+q.id;
+ const passedBefore=(await query('SELECT id FROM attempts WHERE user_id=? AND quest_id=? AND completed_at IS NOT NULL AND score>=80 LIMIT 1',[req.user.id,q.id])).length>0;
+ // Recognize legacy version-scoped rewards without changing existing balances.
+ const rewardedBefore=(await query('SELECT id FROM xp_events WHERE user_id=? AND (source=? OR substr(source,1,?)=?) LIMIT 1',[req.user.id,source,source.length+1,source+':'])).length>0;
  await query('UPDATE attempts SET score=?,completed_at=COALESCE(completed_at,?) WHERE id=?',[result.score,now(),a.id]);
- if(result.score>=80)await query('INSERT INTO xp_events(id,user_id,source,amount,created_at) VALUES(?,?,?,?,?) ON CONFLICT(user_id,source) DO NOTHING',[randomUUID(),req.user.id,'quest:'+q.id+':'+a.version,q.xp,now()]);
- return {...result,xp:result.score>=80?q.xp:0,note:'XP за версию квеста начисляется один раз при результате от 80%.'};
+ let xp=0;
+ if(result.score>=80&&!passedBefore&&!rewardedBefore){
+ const awarded=await query('INSERT INTO xp_events(id,user_id,source,amount,created_at) VALUES(?,?,?,?,?) ON CONFLICT(user_id,source) DO NOTHING RETURNING amount',[randomUUID(),req.user.id,source,q.xp,now()]);
+ xp=Number(awarded[0]?.amount||0);
+ }
+ return {...result,xp,completed:passedBefore||result.score>=80,note:'Квест пройден при результате от 80%. XP начисляется только за первое успешное прохождение. Повторные попытки — без XP.'};
  });if(!response)return res.sendStatus(404);res.json(response);
 });
-app.get('/api/profile',requireUser,async(req,res)=>{const xp=Number((await query('SELECT COALESCE(SUM(amount),0) AS n FROM xp_events WHERE user_id=?',[req.user.id]))[0].n);const progress=await query('SELECT article_id,completed_at FROM progress WHERE user_id=?',[req.user.id]);const attempts=await query('SELECT a.id,a.score,a.completed_at,q.title FROM attempts a JOIN quests q ON q.id=a.quest_id WHERE a.user_id=? ORDER BY a.created_at DESC',[req.user.id]);res.json({user:{name:req.user.name,role:req.user.role,public:req.user.public,login:req.user.login,canChangePassword:req.user.canChangePassword},xp,level:levelFor(xp),next:100*levelFor(xp)**2,progress,attempts,achievements:achievements(xp,attempts.filter(a=>a.completed_at).length,progress.length)});});
+app.get('/api/profile',requireUser,async(req,res)=>{const xp=Number((await query('SELECT COALESCE(SUM(amount),0) AS n FROM xp_events WHERE user_id=?',[req.user.id]))[0].n);const progress=await query('SELECT article_id,completed_at FROM progress WHERE user_id=?',[req.user.id]);const attempts=await query('SELECT a.id,a.quest_id,a.score,a.completed_at,q.title FROM attempts a JOIN quests q ON q.id=a.quest_id WHERE a.user_id=? ORDER BY a.created_at DESC',[req.user.id]);res.json({user:{name:req.user.name,role:req.user.role,public:req.user.public,login:req.user.login,canChangePassword:req.user.canChangePassword},xp,level:levelFor(xp),next:100*levelFor(xp)**2,progress,attempts,achievements:achievements(xp,attempts.filter(a=>a.completed_at).length,progress.length)});});
 app.patch('/api/profile',requireUser,async(req,res)=>{const b=z.object({name:z.string().trim().min(2).max(60),public:z.boolean()}).parse(req.body);await query('UPDATE users SET name=?,public=? WHERE id=?',[b.name,b.public?1:0,req.user.id]);res.json({ok:true});});
 app.get('/api/profile/export',requireUser,async(req,res)=>{res.attachment('bregis-profile.json').json({profile:req.user,progress:await query('SELECT * FROM progress WHERE user_id=?',[req.user.id]),attempts:await query('SELECT id,quest_id,answers,score,created_at,completed_at FROM attempts WHERE user_id=?',[req.user.id]),xp:await query('SELECT * FROM xp_events WHERE user_id=?',[req.user.id])});});
 app.delete('/api/profile',requireUser,async(req,res)=>{await query('DELETE FROM users WHERE id=?',[req.user.id]);req.session.destroy(()=>res.json({ok:true}));});
