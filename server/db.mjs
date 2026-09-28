@@ -19,6 +19,7 @@ export async function transaction(fn){
 export async function init(){
  if(postgres){await query('SELECT id FROM users LIMIT 1');return;}
  sqlite.exec(readFileSync(new URL('../migrations/001.sql',import.meta.url),'utf8'));
+ sqlite.exec(readFileSync(new URL('../migrations/003-credentials.sql',import.meta.url),'utf8'));
  sqlite.exec("CREATE VIRTUAL TABLE IF NOT EXISTS articles_fts USING fts5(id UNINDEXED,title,body,tokenize='unicode61');");
 }
 export async function indexArticle(a){if(!postgres){await query('DELETE FROM articles_fts WHERE id=?',[a.id]);await query('INSERT INTO articles_fts(id,title,body) VALUES(?,?,?)',[a.id,a.title,a.body]);}}

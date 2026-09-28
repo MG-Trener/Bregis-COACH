@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS credentials(login TEXT PRIMARY KEY,user_id TEXT NOT NULL UNIQUE REFERENCES users(id) ON DELETE CASCADE,password_hash TEXT NOT NULL,version INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL);
+INSERT INTO schema_migrations(version,applied_at) VALUES('003','2026-09-28') ON CONFLICT(version) DO NOTHING;

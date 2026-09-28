@@ -1,0 +1,5 @@
+import{readFileSync,writeFileSync,unlinkSync}from'node:fs';import{createHash}from'node:crypto';import{execFileSync}from'node:child_process';
+const manifest=JSON.parse(readFileSync('data/content-release.json','utf8'));
+const url=new URL(manifest.url);if(url.protocol!=='https:'||url.hostname!=='github.com'||!url.pathname.startsWith('/MG-Trener/Bregis-COACH/releases/download/'))throw Error('Unexpected content origin');
+const response=await fetch(url);if(!response.ok)throw Error('Content download failed: '+response.status);const bytes=Buffer.from(await response.arrayBuffer());if(createHash('sha256').update(bytes).digest('hex')!==manifest.sha256)throw Error('Content checksum mismatch');
+const file='.content-release.tar.gz';writeFileSync(file,bytes);const entries=execFileSync('tar',['-tzf',file],{encoding:'utf8'}).trim().split('\n');if(entries.some(p=>p.startsWith('/')||p.includes('..')||!['data/','public/manuals/','public/media/'].some(prefix=>p.startsWith(prefix))))throw Error('Unexpected archive path');execFileSync('tar',['-xzf',file]);unlinkSync(file);console.log('Verified educational content installed.');

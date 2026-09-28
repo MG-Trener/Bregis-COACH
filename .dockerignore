@@ -1,0 +1,15 @@
+.git
+.env
+.env.*
+node_modules
+.local
+dist
+work
+*.pdf
+*.docx
+public/manuals
+public/media
+data/private
+data/catalog.json
+data/manual-search.json
+data/question-drafts.json
